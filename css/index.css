@@ -17,89 +17,46 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: "Raleway", sans-serif;
 }
 /** ######################################### **/
 /** #############  CONTENU  ################# **/
 /** ######################################### **/
-.main-div{
+
+.div{
     background-color: var(--soft-dark-color);
 }
-.main-div-div{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+.div-div{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
     padding: 1rem;
-    background-color: var(--soft-dark-color);
+}
+#description{
+    padding: 1rem;
+    font-size: xx-large;
     color: var(--light-color);
-    transition: 1s;
-    border-radius: 2%;
-    border-bottom: 2px solid var(--light-color);
-}
-.main-div-div:hover{
-    border-bottom: 2px solid var(--red-color);
+    text-align: center;
+    margin: 0;
     transition: 1s;
 }
-.main-div-div:last-child{
-    border-bottom: none;
-}
-.main-div-div:last-child .main-div-div-aside:last-child{
-    border-bottom: none;
-}
-.main-div-div-aside{
-    width: 40%;
-    padding: 1rem;
-    border-radius: 1rem;
+#description:hover{
+    color: var(--red-color);
     transition: 1s;
 }
-.main-div-div-aside img{
-    width: 100%;
-    border-radius: 1rem;
-    transition: 1s;
-    box-shadow: 0 0 10px var(--dark-color);
-}
-.main-div-div-aside p{
-    font-size: 1.5rem;
-    font-style: italic;
+.title-span{
+    color: var(--red-color);
+    font-size: 3rem;
+    font-weight: bold;
     transition: 1s;
 }
-.main-div-div-aside img:hover{
-    box-shadow: 0 0 20px var(--dark-red-color);
-    transition: 1s;
-}
-.main-div-div-aside:nth-of-type(2n) img:hover{
-    transform: rotate(5deg);
-    transition: 1s;
-}
-.main-div-div-aside:nth-of-type(2n-1) img:hover{
-    transform: rotate(-5deg);
-    transition: 1s;
-}
-@media screen and (max-width: 700px){
-    .main-div-div{
-        flex-direction: column;
-        align-items: center;
-        border: none;
-        width: auto;
-    }
-    .main-div-div:hover{
-        border: none;
-    }
-    .main-div-div-aside{
-        width: 90%;
-        padding: 1rem;
-        border-radius: 1rem;
-        transition: 1s;
-    }
-    .main-div-div-aside:nth-of-type(2n){
-        border-bottom: 1px solid var(--light-color);
-    }
-    .main-div-div-aside:nth-of-type(2n):hover{
-        border-bottom: 1px solid var(--red-color);
-    }
+#title{
+    color: var(--light-color);
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
 }
 
 /** ######################################### **/
