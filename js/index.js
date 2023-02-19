@@ -14,5 +14,5 @@ jQuery(document).ready(function () {
   })(jQuery);
 
   // input text for typing animation
-  $("#description").writeText("WEB DEVELOPPER + DATABASE ADMINISTRATOR");
+  $("#description").writeText("EB DEVELOPPER + DATABASE ADMINISTRATOR");
 });
