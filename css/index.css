@@ -52,13 +52,52 @@ body{
     font-weight: bold;
     transition: 1s;
 }
-#title{
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 1rem;
+}
+.title h1:first-child{
     color: var(--light-color);
     font-size: 3rem;
     margin: 0;
     text-align: center;
+    animation-duration: 1s;
+    animation-name: slideinLeft;
 }
-
+.title h1:last-child{
+    color: var(--light-color);
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    animation-duration: 1s;
+    animation-name: slideinRight;
+}
+@keyframes slideinLeft {
+    from {
+      margin-left: -100%;
+      width: 0%;
+    }
+  
+    to {
+      margin-left: 0%;
+      /** width: 100%; **/
+    }
+}
+@keyframes slideinRight {
+    from {
+      margin-left: 300%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      /** width: 100%; **/
+    }
+}
 /** ######################################### **/
 /** ##############  NAVIGATION  ############# **/
 /** ######################################### **/
