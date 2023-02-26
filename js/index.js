@@ -15,4 +15,5 @@ jQuery(document).ready(function () {
 
   // input text for typing animation
   $("#description").writeText("EB DEVELOPPER + DATABASE ADMINISTRATOR");
+  $("#derniere").writeText("AST NEWS");
 });

@@ -39,7 +39,7 @@ body{
     flex-direction: row;
     padding: 1rem;
 }
-#description{
+.titre-h2{
     padding: 1rem;
     font-size: xx-large;
     color: var(--light-color);
@@ -47,7 +47,7 @@ body{
     margin: 0;
     transition: 1s;
 }
-#description:hover{
+.titre-h2:hover{
     color: var(--red-color);
     transition: 1s;
 }
