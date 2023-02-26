@@ -36,6 +36,22 @@ main{
 /** ######################################### **/
 /** #############  CONTENU  ################# **/
 /** ######################################### **/
+p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+a{
+    color: var(--red-color);
+    text-decoration: none;
+    transition: 1s;
+}
+a:hover{
+    color: var(--dark-red-color);
+    transition: 1s;
+}
 .div{
     background-color: var(--soft-dark-color);
     display: flex;
@@ -46,9 +62,17 @@ main{
     border-bottom: 2px solid var(--light-color);
     width: 80%;
     justify-self: center;
+    transition: 1s;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 .div:last-child{
     border-bottom: none;
+}
+.div:hover{
+    border-bottom: 2px solid var(--yellow-light-color);
+    box-shadow: 0 7px 5px 0 var(--yellow-light-color);;
+    transition: 1s;
 }
 .div-div{
     display: flex;
