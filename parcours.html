@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de présentation de Lucas Ravagnier">
+    <link rel="shortcut icon" href="images/lucas.png" type="image/x-icon">
+    <meta name="author" content="Lucas Ravagnier">
+    <meta name="keywords"
+        content="Lucas Ravagnier, Ravagnier, Lucas Ravagnier BTS SIO, Lucas Ravagnier IUT2, Lucas Ravagnier, Lucien Lassalle, Lassalle, grenoble, isère">
+    <link rel="stylesheet" href="css/index.css">
+    <title> RAVAGNIER Lucas </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navigation-bar">
+        <a href="index.html"> <img src="images/lucas.png" alt="logo" width="100" height="100"> </a>
+        <ul class="navigation-bar-ul">
+            <li><a class="navigation-bar-ul-a" href="index.html"> Accueil </a></li>
+            <li><a class="navigation-bar-ul-a" href="creation.html"> Portfolio </a></li>
+            <li><a class="navigation-bar-ul-a" href="cv.html"> Curriculum Vitae </a></li>
+            <li><a class="navigation-bar-ul-a" href="parcours.html"> Parcours </a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+
+    <main>
+        <div class="main-div-div">
+            <aside class="main-div-div-aside">
+                <img src="images/ferdinandBuisson.png" alt="ferdinand buisson">
+            </aside>
+            <aside class="main-div-div-aside">
+                <p>
+                    C'est au Lycée Ferdinand Buisson à Voiron (38) que j'ai découvert ma passion pour l'informatique
+                    et les divers domaines qui y sont liés. J'ai donc décidé de poursuivre mes études dans ce
+                    domaine en intégrant l'IUT2 de Grenoble (38)
+                </p>
+            </aside>
+        </div>
+
+        <div class="main-div-div">
+            <aside class="main-div-div-aside">
+                <p>
+                    En effectuant mes études à l'IUT2, j'ai découvert une passion pour les sites webs, c'est à ce
+                    moment là que j'ai choisis de me spécialiser dans ce domaine
+                </p>
+            </aside>
+            <aside class="main-div-div-aside">
+                <img src="images/IUT2.png" alt="iut2">
+            </aside>
+        </div>
+
+        <div class="main-div-div">
+            <aside class="main-div-div-aside">
+                <img src="images/louiseMichel.png" alt="lycee">
+            </aside>
+            <aside class="main-div-div-aside">
+                <p>
+                    Cependant, l'IUT2 ne pouvait pas me permettre de me spécialiser dans le domaine du web, c'est
+                    pourquoi j'ai décidé de poursuivre mes études en BTS SIO (Services Informatiques aux
+                    Organisations) au lycée Louise Michel à Grenoble (38)
+                </p>
+            </aside>
+        </div>
+    </main>
+    <style>
+ .main-div{
+    background-color: var(--soft-dark-color);
+}
+.main-div-div{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: var(--soft-dark-color);
+    color: var(--light-color);
+    transition: 1s;
+    border-radius: 2%;
+    border-bottom: 2px solid var(--light-color);
+}
+.main-div-div:hover{
+    border-bottom: 2px solid var(--red-color);
+    transition: 1s;
+}
+.main-div-div:last-child{
+    border-bottom: none;
+}
+.main-div-div:last-child .main-div-div-aside:last-child{
+    border-bottom: none;
+}
+.main-div-div-aside{
+    width: 40%;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 1s;
+}
+.main-div-div-aside img{
+    width: 100%;
+    border-radius: 1rem;
+    transition: 1s;
+    box-shadow: 0 0 10px var(--dark-color);
+}
+.main-div-div-aside p{
+    font-size: 1.5rem;
+    font-style: italic;
+    transition: 1s;
+}
+.main-div-div-aside img:hover{
+    box-shadow: 0 0 20px var(--dark-red-color);
+    transition: 1s;
+}
+.main-div-div-aside:nth-of-type(2n) img:hover{
+    transform: rotate(5deg);
+    transition: 1s;
+}
+.main-div-div-aside:nth-of-type(2n-1) img:hover{
+    transform: rotate(-5deg);
+    transition: 1s;
+}
+@media screen and (max-width: 700px){
+    .main-div-div{
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        width: auto;
+    }
+    .main-div-div:hover{
+        border: none;
+    }
+    .main-div-div-aside{
+        width: 90%;
+        padding: 1rem;
+        border-radius: 1rem;
+        transition: 1s;
+    }
+    .main-div-div-aside:nth-of-type(2n){
+        border-bottom: 1px solid var(--light-color);
+    }
+    .main-div-div-aside:nth-of-type(2n):hover{
+        border-bottom: 1px solid var(--red-color);
+    }
+}
+    </style>
+
+    <!-- FOOTER -->
+    <footer>
+        <aside class="footer-aside">
+            <p> RAVAGNIER Lucas &copy; 2023 - <a href="https://www.ravagnier-lucas.fr"> https://ravagnier-lucas.fr </a>
+                - ravagnierlucas@gmail.com </p>
+        </aside>
+        <aside class="footer-aside">
+            <a class="footer-a" href="https://fr.linkedin.com/in/lucas-ravagnier" target="_blank"> <img
+                    src="images/linkedin.png" alt="linkedin"> </a>
+            <a class="footer-a" href="https://github.com/LucienLassalle" target="_blank"> <img src="images/github.png"
+                    alt="github"> </a>
+            <a class="footer-a" href="https://www.instagram.com/sirlucien/" target="_blank"> <img
+                    src="images/instagram.png" alt="instagram"> </a>
+        </aside>
+    </footer>
+</body>
+
+</html>
