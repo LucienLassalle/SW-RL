@@ -5,6 +5,7 @@
 html{
     --dark-color: #1f2327;
     --soft-dark-color: #2c3136;
+    --soft-dark-color: rgb(48, 49, 51);
     --light-color: #f5f5f5;
 
     --red-color: #ff2525;
@@ -17,88 +18,153 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: "Raleway", sans-serif;
+}
+main{
+    background-color: var(--soft-dark-color);
+    display: grid;
+}
+@media screen and (max-width: 1300px){
+    main{
+        display: block;
+    }
+    img{
+        width: 100%;
+        margin-bottom: 2%;
+    }
 }
 /** ######################################### **/
 /** #############  CONTENU  ################# **/
 /** ######################################### **/
-.main-div{
-    background-color: var(--soft-dark-color);
-}
-.main-div-div{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1rem;
-    background-color: var(--soft-dark-color);
+p{
     color: var(--light-color);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+a{
+    color: var(--red-color);
+    text-decoration: none;
     transition: 1s;
+}
+a:hover{
+    color: var(--dark-red-color);
+    transition: 1s;
+}
+.div{
+    background-color: var(--soft-dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
     border-radius: 2%;
     border-bottom: 2px solid var(--light-color);
+    width: 80%;
+    justify-self: center;
+    transition: 1s;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
-.main-div-div:hover{
-    border-bottom: 2px solid var(--red-color);
+.div:last-child{
+    border-bottom: none;
+}
+.div:hover{
+    border-bottom: 2px solid var(--yellow-light-color);
+    box-shadow: 0 7px 5px 0 var(--yellow-light-color);;
     transition: 1s;
 }
-.main-div-div:last-child{
-    border-bottom: none;
-}
-.main-div-div:last-child .main-div-div-aside:last-child{
-    border-bottom: none;
-}
-.main-div-div-aside{
-    width: 40%;
+.div-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
     padding: 1rem;
-    border-radius: 1rem;
+}
+.titre-h2{
+    padding: 1rem;
+    font-size: xx-large;
+    color: var(--light-color);
+    text-align: center;
+    margin: 0;
     transition: 1s;
 }
-.main-div-div-aside img{
-    width: 100%;
-    border-radius: 1rem;
-    transition: 1s;
-    box-shadow: 0 0 10px var(--dark-color);
-}
-.main-div-div-aside p{
-    font-size: 1.5rem;
-    font-style: italic;
+.titre-h2:hover{
+    color: var(--red-color);
     transition: 1s;
 }
-.main-div-div-aside img:hover{
-    box-shadow: 0 0 20px var(--dark-red-color);
+.title-span{
+    color: var(--red-color);
+    font-size: 3rem;
+    font-weight: bold;
     transition: 1s;
 }
-.main-div-div-aside:nth-of-type(2n) img:hover{
-    transform: rotate(5deg);
-    transition: 1s;
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 1rem;
+    color: var(--light-color);
 }
-.main-div-div-aside:nth-of-type(2n-1) img:hover{
-    transform: rotate(-5deg);
-    transition: 1s;
+.title h1{
+    color: var(--light-color);
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    animation-duration: 1s;
 }
-@media screen and (max-width: 1050px){
-    .main-div-div{
+.title h1:first-child{
+    animation-name: slideinLeft;
+}
+.title h1:last-child{
+    animation-name: slideinRight;
+}
+@keyframes slideinLeft {
+    from {
+      margin-left: -100%;
+      width: 0%;
+    }
+  
+    to {
+      margin-left: 0%;
+      /** width: 100%; **/
+    }
+}
+@keyframes slideinRight {
+    from {
+      margin-left: 300%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      /** width: 100%; **/
+    }
+}
+#codewars{
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    margin: 1rem;
+    background-color: var(--soft-dark-color);
+}
+@media screen and (max-width: 1300px){
+    .div{
+        width: 100%;
+        padding: 0;
+    }
+    .div-div{
         flex-direction: column;
-        align-items: center;
-        border: none;
-        width: auto;
     }
-    .main-div-div:hover{
-        border: none;
+    #codewars{
+        width: 100%;
+        height: 100%;
     }
-    .main-div-div-aside{
-        width: 90%;
-        padding: 1rem;
-        border-radius: 1rem;
-        transition: 1s;
-    }
-    .main-div-div-aside:nth-of-type(2n){
-        border-bottom: 1px solid var(--light-color);
-    }
-    .main-div-div-aside:nth-of-type(2n):hover{
-        border-bottom: 1px solid var(--red-color);
+    .title h1{
+        font-size: 2rem;
     }
 }
 
