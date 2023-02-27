@@ -205,10 +205,12 @@ a:hover{
 .navigation-bar-ul li{
     transition: 1s;
 }
+/** Déprécié
 .navigation-bar-ul li:hover{
     transform: rotate(3deg);
     transition: 2s;
 }
+**/
 .navigation-bar-ul-a{
     text-decoration: none;
     color: var(--light-color);
