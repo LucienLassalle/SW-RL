@@ -14,6 +14,6 @@ jQuery(document).ready(function () {
   })(jQuery);
 
   // input text for typing animation
-  $("#description").writeText("EB DEVELOPPER + DATABASE ADMINISTRATOR");
+  $("#description").writeText("EB DEVELOPPER + DATABASE ADMINISTRATOR & ETHICAL HACKER");
   $("#derniere").writeText("AST NEWS");
 });

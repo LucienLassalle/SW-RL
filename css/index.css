@@ -70,9 +70,11 @@ a:hover{
     border-bottom: none;
 }
 .div:hover{
-    border-bottom: 2px solid var(--yellow-light-color);
-    box-shadow: 0 7px 5px 0 var(--yellow-light-color);;
+    border-bottom: 2px solid var(--red-color);
     transition: 1s;
+}
+.div:last-child:hover{
+    border-bottom: none;
 }
 .div-div{
     display: flex;
