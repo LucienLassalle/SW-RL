@@ -170,6 +170,24 @@ a:hover{
     }
 }
 
+.main-div-div{
+    display: flex;
+}
+.main-div-div-aside{
+    width: 20%;
+    background-color: var(--soft-dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2%;
+    border-bottom: 2px solid var(--light-color);
+    margin-bottom: 2%;
+    margin-top: 2%;
+    transition: 1s;
+}
+
 /** ######################################### **/
 /** ##############  NAVIGATION  ############# **/
 /** ######################################### **/
