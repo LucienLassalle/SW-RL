@@ -228,7 +228,9 @@ a:hover{
     width: 100%;
     border-radius: 1rem;
     transition: 1s;
+    /**
     box-shadow: 0 0 10px var(--dark-color);
+    **/
 }
 .main-div-div-aside p{
     font-size: 1.5rem;
@@ -236,7 +238,10 @@ a:hover{
     transition: 1s;
 }
 .main-div-div-aside img:hover{
+    /**
     box-shadow: 0 0 20px var(--dark-red-color);
+    **/
+    filter: drop-shadow(0 0 10px var(--dark-red-color));
     transition: 1s;
 }
 .main-div-div-aside:nth-of-type(2n) img:hover{
