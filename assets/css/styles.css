@@ -206,7 +206,7 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 295px;
+    /** width: 295px; **/
 }
 
 /* ===== ABOUT =====*/
@@ -427,7 +427,8 @@ img{
         row-gap: 0;
     }
     .home__img{
-        width: 524px;
+        /** width: 524px; **/
+        width: 13%;
         right: 10%;
     }
 
@@ -468,22 +469,16 @@ img{
         justify-items: center;
     }
 }
+@media screen and (min-width: 700px) and (min-height: 1000px){
+    .home__img{
+        width: 50%;
+    }
+}
 
 @media screen and (min-width: 1024px){
     .bd-grid{
         margin-left: auto;
         margin-right: auto;
-    }
-}
-
-/* For tall screens on mobiles y desktop*/
-@media screen and (min-height: 721px) and (max-width: 900px) {
-    .home__container {
-        /** height: 640px; **/
-    }
-    .home__img {
-        width: 500px;
-        left: 25%;
     }
 }
 @media screen and (max-width: 900px) {
