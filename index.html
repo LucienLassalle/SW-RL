@@ -1,72 +1,230 @@
 <!DOCTYPE html>
-<html lang="fr">
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Official website from Lucas Ravagnier">
+        <link rel="shortcut icon" href="images/lucas.png" type="image/x-icon">
+        <meta name="author" content="Lucas Ravagnier">
+        <meta name="keywords" content="Lucas Ravagnier, Ravagnier, Lucas Ravagnier BTS SIO, Lucas Ravagnier IUT2, Lucas Ravagnier, Lucien Lassalle, Lassalle, grenoble, isère">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site de présentation de Lucas Ravagnier">
-    <link rel="shortcut icon" href="images/lucas.png" type="image/x-icon">
-    <meta name="author" content="Lucas Ravagnier">
-    <meta name="keywords" content="Lucas Ravagnier, Ravagnier, Lucas Ravagnier BTS SIO, Lucas Ravagnier IUT2, Lucas Ravagnier, Lucien Lassalle, Lassalle, grenoble, isère">
-    <link rel="stylesheet" href="css/index.css">
-    <title> RAVAGNIER Lucas </title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-</head>
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<body>
-    <!-- NAVIGATION -->
-    <nav class="navigation-bar">
-        <a href="index.html"> <img src="images/lucas.png" alt="logo" width="100" height="100"> </a>
-        <ul class="navigation-bar-ul">
-            <li><a class="navigation-bar-ul-a" href="index.html">Accueil</a></li>
-            <li><a class="navigation-bar-ul-a" href="creation.html">Mes créations</a></li>
-            <li><a class="navigation-bar-ul-a" href="vtechnologique.html"> Technologie </a></li>
-            <li><a class="navigation-bar-ul-a" href="cv.html">Curriculum vitæ</a></li>
-            <li><a class="navigation-bar-ul-a" href="parcours.html">Parcours</a></li>
-        </ul>
-    </nav>
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- MAIN -->
+        <title> RAVAGNIER Lucas </title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"> RAVAGNIER Lucas </a>
+                </div>
 
-    <main>
-        <div class="div">
-            <div class="title">
-                <h1> RAVAGNIER </h1><span class="title-span"> / </span> <h1>Lucas </h1>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>WEB</span><br>DEV</h1>
+                    <h2 class="home__title"><span>DATABASE<br>ADMIN</span></h2>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    </div>
+
+                    <img src="assets/img/PP.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/PP.png" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I'm RAVAGNIER Lucas</h2>
+                        <span class="about__profession">WEB DEVELOPPER & DATABASE ADMINISTRATOR</span>
+                        <p class="about__text">Currently a first year student of BTS at Lycée Louise Michel. Interested in cybersecurity, I make small programs of all kinds and I discover programming.</p>
+
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/lucas-ravagnier/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/LucienLassalle" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="https://www.instagram.com/sirlucien/" class="about__social-icon"><i class='bx bxl-instagram' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">WEB DEVELOPMENT</h3>
+                        <span class="skills__name">HTML5</span>
+                        <span class="skills__name">CSS</span>
+                        <span class="skills__name">JS</span>
+                        <span class="skills__name">SCSS</span>
+                        
+                        <h3 class="skills__subtitle">DATABASE ADMINISTRATOR</h3>
+                        <span class="skills__name">POSTGRESQL</span>
+                        <span class="skills__name">MARIADB</span>
+
+                        <h3 class="skills__subtitle">PROGRAMMING</h3>
+                        <span class="skills__name">PYTHON</span>
+                        <span class="skills__name">JAVA</span>
+                        <span class="skills__name">LUA</span>
+
+                        <h3 class="skills__subtitle">CYBERSECURITY</h3>
+                        <span class="skills__name">STEGANOGRAPHY</span>
+                        <span class="skills__name">WEB</span>
+                    </div>
+
+                    <div class="skills__img">
+                        <img src="assets/img/skill.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">PROJECT</h2>
+
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work1.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work2.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work3.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work4.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work5.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work6.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====--> <!--
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">info.mail.com</span>
+
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">+20 999-999</span>
+
+                        <h3 class="contact__subtitle">ADRESS</h3>
+                        <span class="contact__text">My contry</span>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Enviar" class="contact__button">
+                    </form>
+                </div>
+            </section>
+            -->
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">RAVAGNIER Lucas</h2>
+                    <p class="footer__text">I'm RAVAGNIER Lucas and this is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="https://github.com/LucienLassalle" class="footer__social"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/sirlucien/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                </div>
+
+
             </div>
-            <h2 class="titre-h2" id="description">W</h2> <script src="js/index.js"> </script>
-            <div class="div-div">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LucienLassalle&theme=dark&include_all_commits=true&hide_progress=true)" alt="github-stats-1"> <!-- transparent -->
-                <img src="https://github-readme-stats.vercel.app/api?username=LucienLassalle&show_icons=true&theme=dark" alt="github-stats-2">
-            </div>
-            <img id="codewars" src="https://www.codewars.com/users/LucienLassalle/badges/large" alt="codewars">
-            <!-- <img src="https://tryhackme-badges.s3.amazonaws.com/LucienL.png" alt="TryHackMe"> -->
-        </div>
+        </footer>
 
-        <div class="div">        
-            <h2 class="titre-h2" id="derniere">L</h2>
-            <div class="div-div">
-                <img src="images/WS2.png" alt="World Skills">
-                <p> As a BTS student, we had the opportunity to represent the Lycée Louise Michel at the World Cybersecurity Skills with <a href="https://www.pirrello-enzo.fr/">Pirrello Enzo</a>. We hope not to finish last! </p>
-            </div>
-        </div>
-    </main>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- FOOTER -->
-    <footer>
-        <aside class="footer-aside">
-            <p> RAVAGNIER Lucas &copy; 2023 - <a href="https://www.ravagnier-lucas.fr"> https://www.ravagnier-lucas.fr </a>
-                - ravagnierlucas@gmail.com </p>
-        </aside>
-        <aside class="footer-aside">
-            <a class="footer-a" href="https://fr.linkedin.com/in/lucas-ravagnier" target="_blank"> <img
-                    src="images/linkedin.png" alt="linkedin"> </a>
-            <a class="footer-a" href="https://github.com/LucienLassalle" target="_blank"> <img src="images/github.png"
-                    alt="github"> </a>
-            <a class="footer-a" href="https://www.instagram.com/sirlucien/" target="_blank"> <img
-                    src="images/instagram.png" alt="instagram"> </a>
-        </aside>
-    </footer>
-</body>
-
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
