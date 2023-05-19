@@ -565,3 +565,6 @@ img{
 .lang-select{
     display: flex;
 }
+#nav-menu{
+    width: inherit;
+}
