@@ -31,8 +31,8 @@
                         <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="../index.html#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="../index.html#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="../index.html#portfolio" class="nav__link active">Portfolio</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Project</a></li> 
+                        <li class="nav__item"><a href="../index.html#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link active">Project</a></li> 
                     </ul>
                 </div>
 
@@ -303,6 +303,29 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src="../assets/js/main.js"></script>
+        <script>
+            /*===== MENU SHOW =====*/ 
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
+
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show')
+        })
+    }
+}
+showMenu('nav-toggle','nav-menu')
+
+/*===== REMOVE MENU MOBILE =====*/
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+        </script>
     </body>
 </html>
