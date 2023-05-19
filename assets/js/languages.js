@@ -21,6 +21,7 @@ var languagePack = {
         "I'm RAVAGNIER Lucas and this is my personal website":"I'm RAVAGNIER Lucas and this is my personal website",
         "EXPLORE": "EXPLORE",
         "FOLLOW": "FOLLOW",
+        "View details": "View details",
     },
     "fr": {
         "Home": "Accueil",
@@ -44,6 +45,7 @@ var languagePack = {
         "I'm RAVAGNIER Lucas and this is my personal website":"Je suis RAVAGNIER Lucas et ceci est mon site personnel",
         "EXPLORE": "EXPLORER",
         "FOLLOW": "SUIVRE",
+        "View details": "Voir les détails",
     }
 };
 function changeLanguage(lang) {
