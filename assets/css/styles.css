@@ -562,3 +562,6 @@ img{
 .portfolio__up a{
     text-align: center;
 }
+.lang-select{
+    display: flex;
+}

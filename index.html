@@ -8,6 +8,8 @@
         <link rel="shortcut icon" href="assets/img/PP.png" type="image/x-icon">
         <meta name="author" content="Lucas Ravagnier">
         <meta name="keywords" content="Lucas Ravagnier, Ravagnier, Lucas Ravagnier BTS SIO, Lucas Ravagnier IUT2, Lucas Ravagnier, Lucien Lassalle, Lassalle, grenoble, isère">
+        <script src="assets/js/languages.js"></script>
+
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -28,17 +30,34 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="project/project.html" class="nav__link">Project</a></li> 
+                        <li class="nav__item"><a href="#home" class="nav__link active" data-translate="Home"></a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link" data-translate="About"></a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link" data-translate="Skills"></a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link" data-translate="Portfolio"></a></li>
+                        <li class="nav__item"><a href="project/project.html" class="nav__link" data-translate="Project"></a></li> 
                     </ul>
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
+
+                <!--
+                <div class="select-language">
+                    <select id="select-language" onchange="changeLanguage()">
+                        <option value="en"><img src="assets/img/UK.png" alt="f">English</option>
+                        <option value="fr"><img src="assets/img/France.png">Français</option>
+                    </select>
+                </div> -->
+                <div class="lang-select">
+                    <a href="#" onclick="changeLanguage('fr');">
+                      <img src="assets/img/France.png" alt="Français" title="Français" id="FR">
+                    </a>
+                    <a href="#" onclick="changeLanguage('en');">
+                      <img src="assets/img/UK.png" alt="English" title="English" id="EN">
+                    </a>
+                  </div>
+                  
             </nav>
         </header>
 
@@ -50,7 +69,7 @@
                     <h2 class="home__title"><span>DATABASE</span><br><span>ADMIN</span></h2>
 
                     <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' data-translate="Scroll down"></i></a>
                     </div>
 
                     <img src="assets/img/lucas.png" alt="" class="home__img">
@@ -59,7 +78,7 @@
             
             <!--===== ABOUT =====-->
             <section class="about section" id="about">
-                <h2 class="section-title">ABOUT</h2>
+                <h2 class="section-title" data-translate="ABOUT"></h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
@@ -67,9 +86,9 @@
                     </div>
 
                     <div>
-                        <h2 class="about__subtitle">I'm RAVAGNIER Lucas</h2>
-                        <span class="about__profession">WEB DEVELOPPER & DATABASE ADMINISTRATOR</span>
-                        <p class="about__text">Currently a first year student of BTS at Lycée Louise Michel. Interested in cybersecurity, I make small programs of all kinds and I discover programming.</p>
+                        <h2 class="about__subtitle" data-translate="I'm RAVAGNIER Lucas"></h2>
+                        <span class="about__profession" data-translate="WEB DEVELOPPER & DATABASE ADMINISTRATOR"></span>
+                        <p class="about__text" data-translate="Currently a first year student of BTS at Lycée Louise Michel. Interested in cybersecurity, I make small programs of all kinds and I discover programming."></p>
 
                         <div class="about__social">
                             <a href="https://www.linkedin.com/in/lucas-ravagnier/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
@@ -82,27 +101,27 @@
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">SKILLS</h2>
+                <h2 class="section-title" data-translate="SKILLS"></h2>
 
                 <div class="skills__container bd-grid">
                     <div class="skills__box">
-                        <h3 class="skills__subtitle">WEB DEVELOPMENT</h3>
+                        <h3 class="skills__subtitle" data-translate="WEB DEVELOPMENT"></h3>
                         <span class="skills__name">HTML5</span>
                         <span class="skills__name">CSS3</span>
                         <span class="skills__name">JS</span>
                         <span class="skills__name">SCSS</span>
                         
-                        <h3 class="skills__subtitle">DATABASE ADMINISTRATOR</h3>
+                        <h3 class="skills__subtitle" data-translate="DATABASE ADMINISTRATOR"></h3>
                         <span class="skills__name">POSTGRESQL</span>
                         <span class="skills__name">MARIADB</span>
 
-                        <h3 class="skills__subtitle">PROGRAMMING</h3>
+                        <h3 class="skills__subtitle" data-translate="PROGRAMMING"></h3>
                         <span class="skills__name">PYTHON</span>
                         <span class="skills__name">JAVA</span>
                         <span class="skills__name">LUA</span>
 
-                        <h3 class="skills__subtitle">CYBERSECURITY</h3>
-                        <span class="skills__name">STEGANOGRAPHY</span>
+                        <h3 class="skills__subtitle" data-translate="CYBERSECURITY"></h3>
+                        <span class="skills__name" data-translate="STEGANOGRAPHY"></span>
                         <span class="skills__name">WEB</span>
                     </div>
 
@@ -114,7 +133,7 @@
 
             <!--===== PORTFOLIO =====-->
             <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">PROJECT</h2>
+                <h2 class="section-title" data-translate="PROJECT"></h2>
 
                 <div class="portfolio__container bd-grid">
                     <div class="portfolio__img">
@@ -187,7 +206,7 @@
                 <!-- SEE OTHER PROJECT ON THIS PAGE -->
                 <aside class="portfolio__other">
                     <a href=""></a>
-                    <a href="project/project.html">Click here to see my other project<i class='bx bx-right-arrow-alt'></i></a>
+                    <a href="project/project.html" data-translate="Click here to see my other project">Click here to see my other project<i class='bx bx-right-arrow-alt'></i></a>
                 </aside>
             </section>
 
@@ -227,22 +246,22 @@
             <div class="footer__container bd-grid">
                 <div class="footer__data">
                     <h2 class="footer__title">RAVAGNIER Lucas</h2>
-                    <p class="footer__text">I'm RAVAGNIER Lucas and this is my personal website</p>
+                    <p class="footer__text" data-translate="I'm RAVAGNIER Lucas and this is my personal website"></p>
                 </div>
 
                 <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
+                    <h2 class="footer__title" data-translate="EXPLORE"></h2>
                     <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                        <li><a href="project/project.html" class="footer__link">Project</a></li> 
+                        <li><a href="#home" class="footer__link" data-translate="Home"></a></li>
+                        <li><a href="#about" class="footer__link" data-translate="About"></a></li>
+                        <li><a href="#skills" class="footer__link" data-translate="Skills"></a></li>
+                        <li><a href="#portfolio" class="footer__link" data-translate="Portfolio"></a></li>
+                        <li><a href="project/project.html" class="footer__link" data-translate="Project"></a></li> 
                     </ul>
                 </div>
                 
                 <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
+                    <h2 class="footer__title" data-translate="FOLLOW">FOLLOW</h2>
                     <a href="https://github.com/LucienLassalle" class="footer__social"><i class='bx bxl-github' ></i></a>
                     <a href="https://www.instagram.com/sirlucien/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
                 </div>
