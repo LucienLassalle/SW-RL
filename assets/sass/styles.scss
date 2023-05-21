@@ -285,8 +285,8 @@ img{
         }
     }
 }
-/* ===== PORTFOLIO =====*/
-.portfolio{
+/* ===== PROJECT =====*/
+.project{
     background-color: var(--white-color);
 
     &__container{
@@ -301,7 +301,7 @@ img{
             border-radius: .5rem;
         }
         
-        &:hover .portfolio__link{
+        &:hover .project__link{
             bottom: 0;
         }
     }
@@ -479,7 +479,7 @@ img{
         }
     }
 
-    .portfolio{
+    .project{
         &__container{
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(2, 1fr);
