@@ -21,6 +21,7 @@ var languagePack = {
         "EXPLORE": "EXPLORE",
         "FOLLOW": "FOLLOW",
         "View details": "View details",
+        "Technology": "Technology",
     },
     "fr": {
         "Home": "Accueil",
@@ -44,6 +45,7 @@ var languagePack = {
         "EXPLORE": "EXPLORER",
         "FOLLOW": "SUIVRE",
         "View details": "Voir les détails",
+        "Technology": "Technologie",
     }
 };
 function changeLanguage(lang) {
